@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require "#{File.dirname(__FILE__)}/../lib/iloveck101"
+begin
+  STDOUT.print "Loving #{ARGV[0]}\n"
+  Iloveck101.love ARGV[0]
+rescue Exception => e
+  STDERR.print "Fail to love uri: #{uri}, #{e.message}"
+end
+
